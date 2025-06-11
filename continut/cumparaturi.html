@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cumpărături</title>
+    <style>
+        .container {
+            margin: 20px 0;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        #lista-produse li {
+            margin: 8px 0;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        .sterge-produs {
+            margin-left: 10px;
+            padding: 2px 5px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista mea de cumpărături</h1>
+    
+    <div class="container">
+        <form id="formular-produs" onsubmit="return false;">
+            <div class="form-group">
+                <label for="nume">Numele produsului:</label>
+                <input type="text" id="nume" name="nume" required>
+            
+                
+                <label for="cantitate">Cantitate:</label>
+                <input type="number" id="cantitate" name="cantitate" min="1" value="1" required>
+            
+                
+                <label for="unitate">Unitate de măsură:</label>
+                <select id="unitate" name="unitate">
+                    <option value="buc">Bucăți</option>
+                    <option value="kg">Kilograme</option>
+                    <option value="l">Litri</option>
+                    <option value="g">Grame</option>
+                </select>
+            </div>
+            
+            <button type="button" id="adauga" onclick="handleSubmit(event)">Adaugă</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>Produse adăugate:</h2>
+        <ul id="lista-produse"></ul>
+    </div>
+
+</body>
+</html>

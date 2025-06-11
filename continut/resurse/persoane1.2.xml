@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+<persoane>
+  <persoana id="p1">
+
+    <nume>Grigore</nume>
+    <prenume>Matei</prenume>
+    <varsta>23</varsta>
+    <adresa>
+      <strada>Strada Marii</strada>
+      <numar>56</numar>
+      <localitate>Iași</localitate>
+      <judet>Iași</judet>
+      <tara>Romania</tara>
+    </adresa>
+    <informatii-cv>
+      <studii>Universitatea Tehnică din Iași</studii>
+      <experienta>Student</experienta>
+    </informatii-cv>
+  </persoana>
+  <persoana id="p2">
+
+    <nume>Mircea</nume>
+    <prenume>Noe</prenume>
+    <varsta>35</varsta>
+    <adresa>
+      <strada>Strada Unirii</strada>
+      <numar>6</numar>
+      <localitate>București</localitate>
+      <judet>București</judet>
+      <tara>Romania</tara>
+    </adresa>
+    <informatii-cv>
+      <studii>Universitatea București</studii>
+      <experienta>Engineer</experienta>
+    </informatii-cv>
+  </persoana>
+  <persoana id="p3">
+    <nume>Maria</nume>
+    <prenume>Cristina</prenume>
+    <varsta>28</varsta>
+    <adresa>
+      <strada>Strada Victoriei</strada>
+      <numar>45</numar>
+      <localitate>Cluj-Napoca</localitate>
+      <judet>Cluj</judet>
+      <tara>Romania</tara>
+    </adresa>
+    <informatii-cv>
+      <studii>Universitatea Babeș-Bolyai</studii>
+      <experienta>Doctorant</experienta>
+    </informatii-cv>
+  </persoana>
+</persoane>

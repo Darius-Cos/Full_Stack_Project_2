@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bine ați venit la secțiunea Învăț</title>
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+    <div class="container-lateral">
+        <aside class="sidebar">
+            <h3>Navigare</h3>
+            <ul>
+                <li><a href="#sectiunea1">Informații</a></li>
+                <li><a href="#sectiunea2">Canvas</a></li>
+                <li><a href="#sectiunea3">Tabel</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section id="sectiunea1">
+                <h2>Informații Browser și Sistem</h2>
+                <div class="info-container">
+                    <p><strong>Data și ora curentă:</strong> <span id="data-ora"></span></p>
+                    <p><strong>Adresa URL:</strong> <span id="url"></span></p>
+                    <p><strong>Locația curentă:</strong> <span id="locatie"></span></p>
+                    <p><strong>Browser și versiune:</strong> <span id="browser"></span></p>
+                    <p><strong>Sistem de operare:</strong> <span id="sistem"></span></p>
+                </div>
+            </section>
+            
+            <section id="sectiunea2">
+                <h2>Canvas și Desenare</h2>
+                <div class="canvas-container">
+                    <div class="controls">
+                        <label for="culoare-contur">Culoare contur:</label>
+                        <input type="color" id="culoare-contur" value="#000000">
+                        
+                        <label for="culoare-umplere">Culoare umplere:</label>
+                        <input type="color" id="culoare-umplere" value="#0000FF">
+                    </div>
+                    
+                    <p class="instructiuni">Faceți clic în două puncte pentru a desena un dreptunghi.</p>
+                    
+                    <canvas id="canvas-desen" width="600" height="400"></canvas>
+                </div>
+            </section>
+            
+            <section id="sectiunea3">
+                <h2>Tabel Dinamic</h2>
+                <div class="tabel-container">
+                    <div class="controls">
+                        <label for="pozitie">Poziție:</label>
+                        <input type="number" id="pozitie" min="0" value="0">
+                        
+                        <label for="culoare-tabel">Culoare:</label>
+                        <input type="color" id="culoare-tabel" value="#0000FF">
+                        
+                        <button id="adauga-rand">Adaugă rând</button>
+                        <button id="adauga-coloana">Adaugă coloană</button>
+                    </div>
+                    
+                    <table id="tabel-dinamic"></table>
+                </div>
+            </section>
+        </main>
+    </div>
+  
+</body>
+</html>

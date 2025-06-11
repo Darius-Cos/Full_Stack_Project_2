@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+<persoane>
+    <persoana id="p1">
+        <nume>Costache</nume>
+        <prenume>Darius</prenume>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Strada Bradului</strada>
+            <numar>10</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+</persoane>

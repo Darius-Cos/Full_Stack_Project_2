@@ -1,0 +1,10 @@
+[
+    {
+        "utilizator": "test",
+        "parola": "dae"
+    },
+    {
+        "utilizator": "admin",
+        "parola": "adminpass"
+    }
+]

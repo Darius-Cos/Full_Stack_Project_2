@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- face pagina responsive pe dispozitive mobile -->
+    <title>Suplimente și Vitamine</title>
+    <link rel="stylesheet" href="css/stil.css">
+    <script src="js/script.js" defer></script>
+      <script>
+        function schimbaContinut(resursa, jsFisier, jsFunctie) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("continut").innerHTML = this.responseText;
+            
+            if (jsFisier) {
+                var elementScript = document.createElement('script');
+                elementScript.onload = function() {
+                    console.log("hello");
+                    if (jsFunctie) {
+                        window[jsFunctie]();
+                    }
+                };
+                elementScript.src = jsFisier;
+                document.head.appendChild(elementScript);
+            } else {
+                if (jsFunctie) {
+                    window[jsFunctie]();
+                }
+            }
+        }
+    };
+    xhttp.open("GET", resursa + ".html", true);
+    xhttp.send();
+}
+    </script>
+</head>
+<body onload="schimbaContinut('acasa')">
+    <header>
+        <h1><b><i>Suplimente și Vitamine</i></b></h1>
+        <div class="button-container">
+            <a class="button" onclick="schimbaContinut('acasa')">
+                <img src="images/home-agreement.png" alt="Home" width="30" height="30">
+                <span>Home</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('despre')">
+                <img src="images/inf.png" alt="Home" width="30" height="30">
+                <span>Despre</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('inregistreaza','js/script.js','inregistreazaUtilizator')">
+                <img src="images/log-in.png" alt="Înregistrează-te acum" width="30" height="30">
+                <span>Înregistrează-te</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('desen')">
+                <img src="images/galery.png" alt="Galerie Animata" width="30" height="30">
+                <span>Galerie</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('video')">
+                <img src="images/play-button.png" alt="Video suplimente" width="30" height="30">
+                <span>Video</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('invat', '', 'initInvata')">
+                <img src="images/book.png" alt="Învăț" width="30" height="30">
+                <span>Învăț</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')">
+                <img src="images/table.png" alt="Persoane" width="30" height="30">
+                <span>Persoane</span>
+            </a>
+            <a class="button" onclick="schimbaContinut('cumparaturi', 'js/cumparaturi.js', 'initCumparaturi')">
+                <span>Cumpărături</span>
+            </a>
+        </div>
+    </header>
+    <main id="continut">
+    </main>
+    <footer>
+        <p>&copy; 2025 Suplimente Nutritive</p>
+    </footer>
+
+  
+</body>
+</html>

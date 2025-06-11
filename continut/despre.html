@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplimente Nutritive</title>
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h2><b><i>Ce sunt suplimentele nutritive?</i></b></h2>
+        <p><b><i>Suplimentele nutritive sunt produse care ajută la completarea dietei zilnice, furnizând nutrienți esențiali pentru sănătate și performanță.</i></b></p>
+        
+        <h3 id="tipuri-de-suplimente"><b><i>Tipuri de suplimente</i></b></h3>
+        <img src="images/proteina.webp" alt="Proteine" width="150">
+        <img src="images/multi_vit.webp" alt="Vitamine" width="150">
+        <img src="images/omega-3.webp" alt="Omega-3" width="150">
+        
+        <table >
+            <tr>
+                <th>Nume</th>
+                <th>Descriere</th>
+            </tr>
+            <tr>
+                <td>Proteine</td>
+                <td>Ajută la dezvoltarea masei musculare și la refacerea după antrenamente.</td>
+            </tr>
+            <tr>
+                <td>Vitamine</td>
+                <td>Susțin funcțiile esențiale ale organismului și întăresc sistemul imunitar.</td>
+            </tr>
+            <tr>
+                <td>Omega-3</td>
+                <td>Îmbunătățesc sănătatea inimii, a creierului și reduc inflamațiile.</td>
+            </tr>
+        </table>
+        
+        <h3 id="Informații-generale"><b><i>Formular de Înregistrare</i></b></h3>
+        <form>
+            <fieldset>
+                <legend>Informații generale</legend>
+                <label for="username">Nume utilizator:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="parola">Parola:</label>
+                <input type="password" id="parola" name="parola" required><br>
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required><br>
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required><br>
+                <input type="submit" value="Înregistrează" formnovalidate>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Informații personale</legend>
+                <label for="sex">Sexul:</label>
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Selectează sexul</option>
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Feminin</option>
+                </select><br>
+                
+                <label for="suplimente">Tipuri suplimente:</label>
+                <input list="option" id="suplimente" name="suplimente" required>
+                <datalist id="option">
+                    <option value="Proteina">
+                    <option value="Vitamine">
+                    <option value="Omega-3">
+                    <option value="Apa cu electrolizi">
+                </datalist><br>
+                
+                <label for="culoare">Culoarea preferată:</label>
+                <input type="color" id="culoare" name="culoare"><br> 
+                
+                <label for="data_nasterii">Data nașterii:</label>
+                <input type="date" id="data_nasterii" name="data_nasterii" required><br>
+                
+                <label for="ora_nasterii">Ora nașterii:</label>
+                <input type="time" id="ora_nasterii" name="ora_nasterii" required><br>
+                
+                <label for="varsta">Vârsta:</label>
+                <input type="range" id="varsta" name="varsta" min="0" max="100"><br> 
+                
+                <label for="url">Adresa paginii personale:</label>
+                <input type="url" id="url" name="url" required><br>
+                
+                <label for="descriere">Descriere:</label><br>
+                <textarea id="descriere" name="descriere" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Înregistrează" formnovalidate>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+    <h2>Pagina partenera WEIDER </h2>
+
+        <iframe src="https://www.weider.ro/" ></iframe>
+    </div>
+    
+</body>
+</html>
